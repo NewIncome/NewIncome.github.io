@@ -4,7 +4,15 @@
 // to add other files
 // @use 'base'
 
+%info-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px 0 40px;
+}
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -13,15 +21,50 @@
   background-color: #95dab4;
 }
 
-.block {
-  border: 1px solid #000;
-  max-height: 500px;
-  max-width: 800px;
-  min-height: 100px;
-  min-width: 400px;
-  margin: 0 auto 10px;
+.nav {
+  align-items: center;
+  background-color: #adadad;
+  height: 100px;
+  padding: 0 30px;
+  position: fixed;
+  width: 100%;
 }
 
-.nav-link {
-  
+.nav, .nav-sec {
+    display: flex;  
+    justify-content: space-between;
+    .nav-link {
+      list-style: none;
+      padding-left: 50px;
+      text-decoration: none;
+    }
+}
+
+
+.text {
+  text-align: center;
+}
+
+.block {
+  background-color: #c4c4c4;
+  margin: 0 auto 10px;
+  max-height: 500px;
+  min-height: 56vh;
+  width: 100%;
+}
+
+#intro {
+  @extend %info-block;
+  height: 398px;
+  padding-top: 100px;
+}
+
+#p-title,
+#portfolio,
+#about,
+#contact { @extend %info-block; }
+
+
+.footer {
+  padding: 40px 0 50px;
 }

@@ -7,47 +7,64 @@
   <title>Portfolio</title>
 </head>
 <body class="body">
-  <header class="header block">
-    <nav>
-      <div class="nav logo"></div>
-      <ul>
-        <a href="nav-link"><li>Portfolio</li></a>
-        <a href="nav-link"><li>Recent-work</li></a>
-        <a href="nav-link"><li>About</li></a>
-        <a href="nav-link"><li>Contact</li></a>
+  <header class="header">
+    <nav class="nav">
+      <a href="#intro">
+        <div class="nav-logo">JACP</div>
+      </a>
+      <ul class="nav-sec">
+        <a href="#p-title" class="nav-link"><li>Portfolio</li></a>
+        <a href="#portfolio" class="nav-link"><li>Recent-work</li></a>
+        <a href="#about" class="nav-link"><li>About</li></a>
+        <a href="#contact" class="nav-link"><li>Contact</li></a>
       </ul> 
     </nav>
   </header>
 
-  <section class="intro block">
-    <h1 class="title">J. ALFREDO CARDENAS P.</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+  <section class="block" id="intro">
+    <h1 class="title text">J. ALFREDO CARDENAS P.</h1>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
       ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequat</p>
   </section>
 
-  <section class="p-title block">
-    <h2 class="title">PORTFOLIO</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+  <section class="block" id="p-title">
+    <h2 class="title text">PORTFOLIO</h2>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
       ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequat</p>
   </section>
 
-  <section class="portfolio block">
-    <h2 class="title">Test, Projects</h2>
-    <p>test</p>
+  <section class="block"  id="portfolio">
+    <div class="project">
+      <div class="prj-img"></div>
+      <div class="prj-text">
+        <h3></h3>
+        <p></p>
+        <div class="codes">
+          <span class="code">HTML5</span>
+          <span class="code">CSS3</span>
+          <span class="code">Sass</span>
+          <span class="code">Bootstrap</span>
+        </div>
+        <div class="bttns">
+          <button class="bttn">Live Demo</button>
+          <button class="bttn">View Source</button>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="about block">
-    <h2 class="title">ABOUT</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+  <section class="block" id="about">
+    <h2 class="title text">ABOUT</h2>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
       ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequat</p>
   </section>
 
-  <section class="contact block">
-    <h2 class="title">GET IN TOUCH</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+  <section class="block" id="contact">
+    <h2 class="title text">GET IN TOUCH</h2>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
       ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequat</p>
     <ul class="">
@@ -58,9 +75,9 @@
     </ul>
   </section>
 
-  <footer class="footer block">
-    <p>Crafted using Chota, Vue.js, Nuxt.js, Simple Icons and Visual Studio Code.</p>
-    <p>J. Alfredo Cardenas P. © 2020</p>
+  <footer class="footer">
+    <p class="text">Crafted using Chota, Vue.js, Nuxt.js, Simple Icons and Visual Studio Code.</p>
+    <p class="text">J. Alfredo Cardenas P. © 2020</p>
   </footer>
 
 </body>
