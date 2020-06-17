@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+.body {
+  background-color: #95dab4;
+}
+
 .block {
   border: 1px solid #000;
   max-height: 500px;
@@ -16,4 +20,8 @@
   min-height: 100px;
   min-width: 400px;
   margin: 0 auto 10px;
+}
+
+.nav-link {
+  
 }
