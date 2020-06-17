@@ -1,0 +1,19 @@
+// variable:
+// $primary-color: #333
+
+// to add other files
+// @use 'base'
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.block {
+  border: 1px solid #000;
+  max-height: 500px;
+  max-width: 800px;
+  min-height: 100px;
+  min-width: 400px;
+  margin: 0 auto 10px;
+}
