@@ -7,9 +7,16 @@
   justify-content: space-around;
   padding: 20px 0 40px; }
 
-.nav, .nav-sec {
+.nav,
+.nav-sec {
   display: flex;
   justify-content: space-between; }
+
+.nav .cntc-link,
+.nav-sec .cntc-link, .project .prj-right .prj-codes .code {
+  border: 2px solid #95dab4;
+  border-radius: 8px;
+  padding: 6px 10px; }
 
 * {
   box-sizing: border-box;
@@ -17,7 +24,8 @@
   padding: 0; }
 
 .body {
-  background-color: #95dab4; }
+  background-color: #95dab4;
+  color: #262626; }
 
 .nav {
   align-items: center;
@@ -27,17 +35,23 @@
   position: fixed;
   width: 100%; }
 
-.nav .nav-link, .nav-sec .nav-link {
+.nav .nav-link,
+.nav-sec .nav-link {
+  color: #262626;
   list-style: none;
-  padding-left: 50px;
+  margin-left: 50px;
+  padding: 6px 10px;
   text-decoration: none; }
+.nav .cntc-link,
+.nav-sec .cntc-link {
+  background-color: #95dab4; }
 
 .text {
   text-align: center; }
 
 .block {
   background-color: #e4e4e4;
-  margin: 0 auto 10px;
+  margin: 0 auto;
   max-height: 500px;
   min-height: 56vh;
   width: 100%; }
@@ -45,6 +59,10 @@
 #intro {
   height: 398px;
   padding-top: 100px; }
+
+#p-title,
+#about {
+  background-color: #8d8d8d; }
 
 .footer {
   padding: 40px 0 50px; }
@@ -68,10 +86,7 @@
     .project .prj-right .prj-codes {
       padding: 35px 0px; }
       .project .prj-right .prj-codes .code {
-        border: 2px solid #95dab4;
-        border-radius: 8px;
         display: inline-block;
-        padding: 6px 10px;
         margin-top: 5px; }
     .project .prj-right button {
       border: none;
