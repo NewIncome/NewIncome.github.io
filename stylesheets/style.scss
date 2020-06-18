@@ -11,6 +11,11 @@
   padding: 20px 0 40px;
 }
 
+%flx-btwn {
+  display: flex;
+  justify-content: space-between;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,8 +36,7 @@
 }
 
 .nav, .nav-sec {
-    display: flex;  
-    justify-content: space-between;
+    @extend %flx-btwn;
     .nav-link {
       list-style: none;
       padding-left: 50px;
@@ -46,7 +50,7 @@
 }
 
 .block {
-  background-color: #c4c4c4;
+  background-color: #e4e4e4;
   margin: 0 auto 10px;
   max-height: 500px;
   min-height: 56vh;
@@ -67,4 +71,53 @@
 
 .footer {
   padding: 40px 0 50px;
+}
+
+.project {
+  background-color: #fff;
+  border: 1px solid #000;
+  box-shadow: 2px 2.5px 7px 3px #c4c4c4;
+  display: flex;
+  max-width: 90%;
+  margin: auto auto;
+  .prj-left {
+    height: 100%;
+    max-width: 30%;
+    min-width: 20%;
+  }
+  .prj-right {
+    max-width: 70%;
+    padding: 35px;
+    .prj-text { padding-top: 35px; }
+    .prj-codes {
+      padding: 35px 0px;
+      .code {
+        border: 2px solid #95dab4;
+        border-radius: 8px;
+        display: inline-block;
+        padding: 6px 10px;
+        margin-top: 5px;
+      }
+    }
+    & button {
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0.5px 1px 1.5px 0.5px #c4c4c4;
+      padding: 5px;
+      &:hover {
+        box-shadow: 2px 2.5px 1.5px 0.5px #c4c4c4;
+        transform: translateY(1px);
+      }
+    }
+
+    .bttn-l {
+      background-color: #8053E1;
+      color: #fff;
+    }
+    .bttn-s {
+      background-color: #fbfbfb;
+      color: #7345d8;
+      margin-left: 5px;
+    }
+  }
 }
