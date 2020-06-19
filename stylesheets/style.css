@@ -27,7 +27,7 @@
 
 .nav {
   align-items: center;
-  background-color: #35604224;
+  background: linear-gradient(#35604291, #fff0);
   height: 100px;
   padding: 0 30px;
   position: fixed;
