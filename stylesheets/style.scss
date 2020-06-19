@@ -98,12 +98,7 @@
 
 #contact { background: #55ce7d; }
 
-.footer {
-  background-color: #2d2a2a;
-  color: #8e8e8e;
-  padding: 40px 0 50px;
-}
-#portfolio { background: linear-gradient(#ffffff7d,#ffffff7d), no-repeat center/100% url("../images/0NUOGy.jpg") fixed; }
+#portfolio { background: linear-gradient(#ffffff7d,#ffffff7d), no-repeat center/110% url("../images/0NUOGy.jpg") fixed; }
 
 .project {
   background-color: #fbfbfb;
@@ -111,7 +106,7 @@
   box-shadow: 2px 2.5px 7px 3px #c4c4c4;
   display: flex;
   max-width: 90%;
-  margin: auto auto;
+  margin: 40px auto;
   .prj-left {
     height: 100%;
     max-width: 30%;
@@ -150,4 +145,20 @@
       margin-left: 5px;
     }
   }
+}
+
+.cntc-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  .c-link {
+    list-style: none;
+    margin: 0 20px;
+  }
+}
+
+.footer {
+  background-color: #2d2a2a;
+  color: #8e8e8e;
+  padding: 40px 0 50px;
 }
