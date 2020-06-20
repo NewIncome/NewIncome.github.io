@@ -17,7 +17,6 @@
   display: flex;
   justify-content: space-between; }
 
-.nav .cntc-link,
 .nav-sec .cntc-link, .project .prj-right .prj-codes .code {
   border: 2px solid #95dab4;
   border-radius: 8px;
@@ -39,7 +38,9 @@
   position: fixed;
   width: 100%; }
 
-.nav .nav-link,
+@media screen and (max-width: 1200px) {
+  .nav-sec {
+    display: none; } }
 .nav-sec .nav-link {
   color: #262626;
   font-weight: bold;
@@ -47,27 +48,20 @@
   margin-left: 50px;
   padding: 6px 10px;
   text-decoration: none; }
-  .nav .nav-link:hover,
   .nav-sec .nav-link:hover {
     transform: scale(1.05, 1.05); }
-.nav .nlp,
 .nav-sec .nlp {
   color: #008bff;
   text-shadow: 1px 1px 2px #000; }
-  .nav .nlp:hover,
   .nav-sec .nlp:hover {
     text-shadow: 1px 1px 6px #000; }
-.nav .nlm,
 .nav-sec .nlm {
   text-shadow: 1px 1px 2px #acacac; }
-  .nav .nlm:hover,
   .nav-sec .nlm:hover {
     color: #95dab4;
     text-shadow: 1px 1px 6px #a6a6a6; }
-.nav .cntc-link,
 .nav-sec .cntc-link {
   background-color: #95dab4; }
-  .nav .cntc-link:hover,
   .nav-sec .cntc-link:hover {
     box-shadow: 1px 2px 1px 2px #0000005c; }
 
@@ -85,13 +79,13 @@
   .block .h2 {
     font-size: 2.5em; }
   .block .p {
-    font-size: 1.5em; }
+    font-size: 1.5rem; }
 
 #intro {
   background: linear-gradient(#47d04de3, #0c3c0047), no-repeat top/cover url("../images/489112.jpg") fixed;
   color: #f5f1ff;
-  height: 70vh;
-  padding-top: 100px;
+  min-height: 70vh;
+  padding-top: 115px;
   text-shadow: 1px 1px 1px #757575; }
 
 #p-title {
@@ -109,8 +103,10 @@
   border: 1px solid #000;
   box-shadow: 2px 2.5px 7px 3px #c4c4c4;
   display: flex;
-  max-width: 90%;
   margin: 40px auto; }
+  @media screen and (min-width: 425px) {
+    .project {
+      max-width: 90%; } }
   .project .prj-left {
     height: 100%;
     width: 35%;
@@ -122,6 +118,12 @@
     margin: 0 auto;
     padding: 10px 35px;
     width: 65%; }
+    @media screen and (max-width: 1200px) {
+      .project .prj-right {
+        min-width: 80%;
+        padding: 0; }
+        .project .prj-right .p {
+          font-size: 1em; } }
     .project .prj-right > * {
       margin: 28px 0; }
     .project .prj-right .prj-codes .code {
