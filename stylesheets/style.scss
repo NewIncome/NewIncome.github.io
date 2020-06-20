@@ -8,6 +8,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  & > * {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 }
 
 %flx-btwn {
@@ -50,12 +54,24 @@
       margin-left: 50px;
       padding: 6px 10px;
       text-decoration: none;
+      &:hover { transform: scale(1.05, 1.05); }
     }
-    .nlm:hover { color: #95dab4; }
-    .nlp { color: #7345d8; }
+    .nlp {
+      color: #008bff;
+      text-shadow: 1px 1px 2px #000;
+      &:hover { text-shadow: 1px 1px 6px #000; }
+    }
+    .nlm {
+      text-shadow: 1px 1px 2px #acacac;
+      &:hover {
+        color: #95dab4;
+        text-shadow: 1px 1px 6px #a6a6a6;
+      }
+    }
     .cntc-link {
       @extend %bttn;
       background-color: #95dab4;
+      &:hover { box-shadow: 1px 2px 1px 2px #0000005c; }
     }
 }
 
@@ -68,7 +84,7 @@
   background-color: #e4e4e4;
   margin: 0 auto;
   min-height: 30vh;
-  padding: 20px 10% 40px;
+  padding: 30px 10% 40px;
   width: 100%;
   .h1 { font-size: 3em; }
   .h2 { font-size: 2.5em; }
@@ -77,7 +93,7 @@
 
 #intro {
   @extend %info-block;
-  background: linear-gradient(#47d04de3, #0c3c0047), no-repeat top/100% url("../images/489112.jpg") fixed;
+  background: linear-gradient(#47d04de3, #0c3c0047), no-repeat top/cover url("../images/489112.jpg") fixed;
   color: #f5f1ff;
   height: 70vh;
   padding-top: 100px;
@@ -96,9 +112,9 @@
   color: #313131;
 }
 
-#contact { background: #55ce7d; }
 
-#portfolio { background: linear-gradient(#ffffff7d,#ffffff7d), no-repeat center/110% url("../images/0NUOGy.jpg") fixed; }
+//#portfolio { background: linear-gradient(#ffffff7d,#ffffff7d), no-repeat center/cover url("../images/img02.jpeg") fixed; }
+#portfolio { background: linear-gradient(#ffffff7d,#ffffff7d), no-repeat center/cover url("../images/0NUOGy.jpg") fixed; }
 
 .project {
   background-color: #fbfbfb;
@@ -109,51 +125,69 @@
   margin: 40px auto;
   .prj-left {
     height: 100%;
-    max-width: 30%;
-    min-width: 20%;
+    width: 35%;
+    background-color: #2d2a2a;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
   }
   .prj-right {
-    max-width: 70%;
-    padding: 35px;
-    .prj-text { padding-top: 35px; }
+    margin: 0 auto;
+    padding: 10px 35px;
+    width: 65%;
+    & > * { margin: 28px 0; }
     .prj-codes {
-      padding: 35px 0px;
       .code {
         @extend %bttn;
         display: inline-block;
         margin-top: 5px;
       }
     }
+    .prj-bttns { display: flex; }
     & button {
       border: none;
       border-radius: 5px;
       box-shadow: 0.5px 1px 1.5px 0.5px #c4c4c4;
-      padding: 5px;
+      display: inline-flex;
+      padding: 8px 10px;
       &:hover {
         box-shadow: 2px 2.5px 1.5px 0.5px #c4c4c4;
         transform: translateY(1px);
       }
     }
-
+    .s-ico { width: 17px; }
     .bttn-l {
       background-color: #8053E1;
       color: #fff;
+      .s-ico { margin-left: 7px; }
     }
     .bttn-s {
       background-color: #fbfbfb;
       color: #7345d8;
-      margin-left: 5px;
+      margin-left: 10px;
+      .s-ico { margin-right: 7px; }
     }
   }
 }
 
+.ico {
+  align-self: center;
+  width: 37px;
+}
+.in { width: 33px; }
+
+#contact { background: #55ce7d; }
+
+.p {
+  margin: 30px 0;
+}
 .cntc-links {
   display: flex;
   justify-content: center;
   list-style: none;
   .c-link {
     list-style: none;
-    margin: 0 20px;
+    margin: 20px 20px;
   }
 }
 
