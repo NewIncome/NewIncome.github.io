@@ -30,6 +30,28 @@
 .body {
   color: #262626; }
 
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif; }
+
+p {
+  font-family: 'Roboto', sans-serif; }
+
+.text {
+  text-align: center; }
+
+.block {
+  background-color: #e4e4e4;
+  margin: 0 auto;
+  min-height: 30vh;
+  padding: 30px 10% 40px;
+  width: 100%; }
+  .block .h1 {
+    font-size: 3em; }
+  .block .h2 {
+    font-size: 2.5em; }
+  .block .p {
+    font-size: 1.5rem; }
+
 .nav {
   align-items: center;
   background: linear-gradient(#35604291, #fff0);
@@ -37,6 +59,13 @@
   padding: 0 30px;
   position: fixed;
   width: 100%; }
+
+.logo {
+  color: #127ce8;
+  font-family: 'Black Ops One', cursive !important;
+  text-shadow: 1px 1px 1px #fff;
+  font-size: 2em;
+  text-decoration: none; }
 
 @media screen and (max-width: 1200px) {
   .nav-sec {
@@ -64,22 +93,6 @@
   background-color: #95dab4; }
   .nav-sec .cntc-link:hover {
     box-shadow: 1px 2px 1px 2px #0000005c; }
-
-.text {
-  text-align: center; }
-
-.block {
-  background-color: #e4e4e4;
-  margin: 0 auto;
-  min-height: 30vh;
-  padding: 30px 10% 40px;
-  width: 100%; }
-  .block .h1 {
-    font-size: 3em; }
-  .block .h2 {
-    font-size: 2.5em; }
-  .block .p {
-    font-size: 1.5rem; }
 
 #intro {
   background: linear-gradient(#47d04de3, #0c3c0047), no-repeat top/cover url("../images/489112.jpg") fixed;
@@ -172,7 +185,6 @@
   justify-content: center;
   list-style: none; }
   .cntc-links .c-link {
-    list-style: none;
     margin: 20px 20px; }
 
 .footer {

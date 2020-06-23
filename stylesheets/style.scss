@@ -35,6 +35,25 @@
   color: #262626;
 }
 
+h1, h2, h3 { font-family: 'Roboto', sans-serif; }
+
+p { font-family: 'Roboto', sans-serif; }
+
+.text {
+  text-align: center;
+}
+
+.block {
+  background-color: #e4e4e4;
+  margin: 0 auto;
+  min-height: 30vh;
+  padding: 30px 10% 40px;
+  width: 100%;
+  .h1 { font-size: 3em; }
+  .h2 { font-size: 2.5em; }
+  .p { font-size: 1.5rem; }
+}
+
 .nav {
   align-items: center;
   background: linear-gradient(#35604291,#fff0);
@@ -42,6 +61,17 @@
   padding: 0 30px;
   position: fixed;
   width: 100%;
+}
+
+.logo {
+  color: #127ce8;
+  //font-family: 'Monoton', cursive;
+  font-family: 'Black Ops One', cursive !important;
+  //font-family: 'Pacifico', cursive;
+  //font-family: 'Leckerli One', cursive;
+  text-shadow: 1px 1px 1px #fff;
+  font-size: 2em;
+  text-decoration: none;
 }
 
 .nav,
@@ -78,22 +108,6 @@
       background-color: #95dab4;
       &:hover { box-shadow: 1px 2px 1px 2px #0000005c; }
     }
-}
-
-
-.text {
-  text-align: center;
-}
-
-.block {
-  background-color: #e4e4e4;
-  margin: 0 auto;
-  min-height: 30vh;
-  padding: 30px 10% 40px;
-  width: 100%;
-  .h1 { font-size: 3em; }
-  .h2 { font-size: 2.5em; }
-  .p { font-size: 1.5rem; }
 }
 
 #intro {
@@ -198,7 +212,6 @@
   justify-content: center;
   list-style: none;
   .c-link {
-    list-style: none;
     margin: 20px 20px;
   }
 }
