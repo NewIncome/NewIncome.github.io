@@ -4,6 +4,9 @@
 // to add other files
 // @use 'base'
 
+// Variables
+$white-ish: #c4c4c4;
+
 %info-block {
   display: flex;
   flex-direction: column;
@@ -129,16 +132,16 @@ p { font-family: 'Roboto', sans-serif; }
 #about {
   background: #e8eff2;
   color: #313131;
+  .ico:hover { animation: eIcon 2s ease-in-out; }
 }
 
 
-//#portfolio { background: linear-gradient(#ffffff7d,#ffffff7d), no-repeat center/cover url("../images/img02.jpeg") fixed; }
 #portfolio { background: linear-gradient(#ffffff7d,#ffffff7d), no-repeat center/cover url("../images/0NUOGy.jpg") fixed; }
 
 .project {
   background-color: #fbfbfb;
   border: 1px solid #000;
-  box-shadow: 2px 2.5px 7px 3px #c4c4c4;
+  box-shadow: 2px 2.5px 7px 3px $white-ish;
   display: flex;
   margin: 40px auto;
   @media screen and (min-width: 425px) {
@@ -173,23 +176,23 @@ p { font-family: 'Roboto', sans-serif; }
     & button {
       border: none;
       border-radius: 5px;
-      box-shadow: 0.5px 1px 1.5px 0.5px #c4c4c4;
+      box-shadow: 0.5px 1px 1.5px 0.5px $white-ish;
       display: inline-flex;
       padding: 8px 10px;
       &:hover {
-        box-shadow: 2px 2.5px 1.5px 0.5px #c4c4c4;
+        box-shadow: 2px 2.5px 1.5px 0.5px $white-ish;
         transform: translateY(1px);
       }
     }
     .s-ico { width: 17px; }
     .bttn-l {
-      background-color: #8053E1;
+      background-color: #02a0d9;
       color: #fff;
       .s-ico { margin-left: 7px; }
     }
     .bttn-s {
       background-color: #fbfbfb;
-      color: #7345d8;
+      color: #02a0d9;
       margin-left: 10px;
       .s-ico { margin-right: 7px; }
     }
@@ -203,6 +206,12 @@ p { font-family: 'Roboto', sans-serif; }
 .in { width: 33px; }
 
 #contact { background: #55ce7d; }
+
+@keyframes eIcon {
+  0% { }
+  50% { transform: scale(1.3); }
+}
+
 
 .p {
   margin: 30px 0;
