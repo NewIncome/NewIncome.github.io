@@ -65,7 +65,7 @@
     font-family: 'Black Ops One', cursive !important; }
 
 .nav-sec {
-  font-size: 1.04em; }
+  font-size: 1.05em; }
   @media screen and (max-width: 1200px) {
     .nav-sec {
       display: none; } }
@@ -75,22 +75,24 @@
     list-style: none;
     margin-left: 50px;
     padding: 6px 10px; }
-    .nav-sec .nav-link:hover {
-      transform: scale(1.05, 1.05); }
   .nav-sec .nlp {
     color: #008bff;
     text-shadow: 1px 1px 2px #000; }
     .nav-sec .nlp:hover {
-      text-shadow: 1px 1px 6px #000; }
+      text-shadow: 1px 1px 6px #666666f2;
+      transform: scale(1.15);
+      transition: transform 0.5s ease-in-out; }
   .nav-sec .nlm {
     text-shadow: 1px 1px 2px #acacac; }
     .nav-sec .nlm:hover {
-      color: #95dab4;
-      text-shadow: 1px 1px 6px #a6a6a6; }
+      color: #92d9b2;
+      text-shadow: 1px 1px 10px #000;
+      transform: scale(1.05); }
   .nav-sec .cntc-link {
     background-color: #95dab4; }
     .nav-sec .cntc-link:hover {
-      box-shadow: 1px 2px 1px 2px #0000005c; }
+      box-shadow: 1px 2px 1px 2px #0000005c;
+      transform: scale(1.05, 1.05); }
 
 #intro {
   background: linear-gradient(#47d04de3, #0c3c0047), no-repeat top/cover url("../images/489112.jpg") fixed;

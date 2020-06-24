@@ -72,7 +72,7 @@ $logo-blue: #127ce8;
     @extend %flx-btwn;
 }
 .nav-sec  {
-  font-size: 1.04em;
+  font-size: 1.05em;
   @media screen and (max-width: 1200px) {
     display: none;
   }
@@ -82,24 +82,31 @@ $logo-blue: #127ce8;
     list-style: none;
     margin-left: 50px;
     padding: 6px 10px;
-    &:hover { transform: scale(1.05, 1.05); }
   }
   .nlp {
     color: #008bff;
     text-shadow: 1px 1px 2px #000;
-    &:hover { text-shadow: 1px 1px 6px #000; }
+    &:hover {
+      text-shadow: 1px 1px 6px #666666f2;
+      transform: scale(1.15);
+      transition: transform 0.5s ease-in-out;
+    }
   }
   .nlm {
     text-shadow: 1px 1px 2px #acacac;
     &:hover {
-      color: #95dab4;
-      text-shadow: 1px 1px 6px #a6a6a6;
+      color: #92d9b2;
+      text-shadow: 1px 1px 10px #000;
+      transform: scale(1.05);
     }
   }
   .cntc-link {
     @extend %bttn;
     background-color: #95dab4;
-    &:hover { box-shadow: 1px 2px 1px 2px #0000005c; }
+    &:hover {
+      box-shadow: 1px 2px 1px 2px #0000005c;
+      transform: scale(1.05, 1.05);
+    }
   }
 }
 
