@@ -147,6 +147,8 @@
     width: 65%; }
     .project .prj-right .h3 {
       font-size: 1.8em; }
+    .project .prj-right .p {
+      margin-bottom: 5px !important; }
     @media screen and (max-width: 1200px) {
       .project .prj-right {
         min-width: 80%;
@@ -186,6 +188,9 @@
       .project .prj-right .bttn-s .s-ico {
         margin-right: 7px; }
 
+.i {
+  margin-top: 0 !important; }
+
 .co-op {
   bottom: 0;
   color: #848484;
@@ -193,6 +198,9 @@
   font-size: 1.2em;
   position: absolute;
   right: 35px; }
+
+#prj2 .h3 {
+  margin-bottom: 5px !important; }
 
 .ico {
   align-self: center;
