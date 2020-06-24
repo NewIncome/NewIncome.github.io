@@ -207,6 +207,15 @@ $white-ish: #c4c4c4;
     }
   }
 }
+#prj2 .blur,
+#prj4 .blur {
+  background: linear-gradient(-90deg,#fff0 50%,#c1c1c150 65% 65%,#fbfbfb 95%);
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .i { margin-top: 0 !important; }
 
 .co-op {
@@ -238,6 +247,7 @@ $white-ish: #c4c4c4;
 
 .p {
   margin: 30px 0;
+  text-align: justify;
 }
 .cntc-links {
   display: flex;
