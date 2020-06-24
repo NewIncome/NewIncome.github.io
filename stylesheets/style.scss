@@ -145,7 +145,9 @@ $white-ish: #c4c4c4;
     width: 35%;
     img {
       height: 100%;
-      max-width: 600px;
+      left: -125px;
+      max-width: 730px;
+      position: relative;
     }
     .blur {
       background: linear-gradient(90deg,#fff0 50%,#c1c1c150 65% 65%,#fbfbfb 95%);
@@ -247,7 +249,7 @@ $white-ish: #c4c4c4;
 
 .p {
   margin: 30px 0;
-  text-align: justify;
+  // text-align: justify; NOT SURE YET
 }
 .cntc-links {
   display: flex;
