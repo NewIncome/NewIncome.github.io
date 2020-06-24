@@ -199,9 +199,6 @@
   top: 0;
   z-index: 1; }
 
-#prj2 .blur {
-  background: linear-gradient(-90deg, #fff0 50%, #eeeeee50 65% 65%, #fbfbfb 95%); }
-
 .i {
   margin-top: 0 !important; }
 
@@ -212,6 +209,11 @@
   font-size: 1.2em;
   position: absolute;
   right: 35px; }
+  @media screen and (max-width: 846px) {
+    .co-op {
+      bottom: -28px;
+      font-size: 1em;
+      right: -10%; } }
 
 #prj2 .h3 {
   margin-bottom: 5px !important; }
@@ -243,5 +245,7 @@
   background-color: #2d2a2a;
   color: #8e8e8e;
   padding: 40px 0 50px; }
+  .footer .a {
+    color: #127ce8; }
 
 /*# sourceMappingURL=style.css.map */

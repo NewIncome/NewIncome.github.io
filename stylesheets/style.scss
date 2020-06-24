@@ -3,6 +3,7 @@
 
 // Variables
 $white-ish: #c4c4c4;
+$logo-blue: #127ce8;
 
 %info-block {
   display: flex;
@@ -60,7 +61,7 @@ $white-ish: #c4c4c4;
 }
 
 .logo {
-  color: #127ce8;
+  color: $logo-blue;
   text-shadow: 1px 1px 1px #fff;
   font-size: 2em;
   .nav-logo { font-family: 'Black Ops One', cursive !important; }
@@ -231,6 +232,11 @@ $white-ish: #c4c4c4;
   font-size: 1.2em;
   position: absolute;
   right: 35px;
+  @media screen and (max-width: 846px) {
+    bottom: -28px;
+    font-size: 1em;
+    right: -10%;
+  }
 }
 
 #prj2 .h3 {
@@ -268,4 +274,7 @@ $white-ish: #c4c4c4;
   background-color: #2d2a2a;
   color: #8e8e8e;
   padding: 40px 0 50px;
+  .a {
+    color: $logo-blue;
+  }
 }
