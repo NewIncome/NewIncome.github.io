@@ -90,6 +90,7 @@ $logo-blue: #127ce8;
     list-style: none;
     margin-left: 50px;
     padding: 6px 10px;
+
   }
 
   .nlp {
@@ -97,7 +98,7 @@ $logo-blue: #127ce8;
     text-shadow: 1px 1px 2px #000;
 
     &:hover {
-      text-shadow: 1px 1px 6px #666666f2;
+      text-shadow: 1px 1px 10px #000;
       transform: scale(1.15);
       transition: transform 0.5s ease-in-out;
     }
@@ -118,11 +119,9 @@ $logo-blue: #127ce8;
 
     background-color: #95dab4;
 
-    &:hover {
-      box-shadow: 1px 2px 1px 2px #0000005c;
-      transform: scale(1.05, 1.05);
-    }
+    &:hover { box-shadow: 1px 2px 1px 2px #0000005c; }
   }
+  .li-bt:hover { transform: scale(1.05, 1.05); }
 }
 
 #intro {
