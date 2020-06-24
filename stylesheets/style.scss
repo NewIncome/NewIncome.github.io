@@ -30,17 +30,13 @@ $white-ish: #c4c4c4;
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
-.body {
-  color: #262626;
-}
+.body { color: #262626; }
 
-//h1, h2, h3, p, li  { font-family: 'Roboto', sans-serif; }
 
-.text {
-  text-align: center;
-}
+.text { text-align: center; }
 
 .block {
   background-color: #e4e4e4;
@@ -60,13 +56,13 @@ $white-ish: #c4c4c4;
   padding: 0 30px;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .logo {
   color: #127ce8;
   text-shadow: 1px 1px 1px #fff;
   font-size: 2em;
-  text-decoration: none;
   .nav-logo { font-family: 'Black Ops One', cursive !important; }
 }
 
@@ -75,35 +71,35 @@ $white-ish: #c4c4c4;
     @extend %flx-btwn;
 }
 .nav-sec  {
-    @media screen and (max-width: 1200px) {
-      display: none;
+  font-size: 1.04em;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+  .nav-link {
+    color: #262626;
+    font-weight: bold;
+    list-style: none;
+    margin-left: 50px;
+    padding: 6px 10px;
+    &:hover { transform: scale(1.05, 1.05); }
+  }
+  .nlp {
+    color: #008bff;
+    text-shadow: 1px 1px 2px #000;
+    &:hover { text-shadow: 1px 1px 6px #000; }
+  }
+  .nlm {
+    text-shadow: 1px 1px 2px #acacac;
+    &:hover {
+      color: #95dab4;
+      text-shadow: 1px 1px 6px #a6a6a6;
     }
-    .nav-link {
-      color: #262626;
-      font-weight: bold;
-      list-style: none;
-      margin-left: 50px;
-      padding: 6px 10px;
-      text-decoration: none;
-      &:hover { transform: scale(1.05, 1.05); }
-    }
-    .nlp {
-      color: #008bff;
-      text-shadow: 1px 1px 2px #000;
-      &:hover { text-shadow: 1px 1px 6px #000; }
-    }
-    .nlm {
-      text-shadow: 1px 1px 2px #acacac;
-      &:hover {
-        color: #95dab4;
-        text-shadow: 1px 1px 6px #a6a6a6;
-      }
-    }
-    .cntc-link {
-      @extend %bttn;
-      background-color: #95dab4;
-      &:hover { box-shadow: 1px 2px 1px 2px #0000005c; }
-    }
+  }
+  .cntc-link {
+    @extend %bttn;
+    background-color: #95dab4;
+    &:hover { box-shadow: 1px 2px 1px 2px #0000005c; }
+  }
 }
 
 #intro {
@@ -141,9 +137,24 @@ $white-ish: #c4c4c4;
     max-width: 90%;
   }
   .prj-left {
-    height: 100%;
-    width: 35%;
     background-color: #2d2a2a;
+    height: 100%;
+    min-height: 350px;
+    overflow: hidden;
+    position: relative;
+    width: 35%;
+    img {
+      height: 100%;
+      max-width: 600px;
+    }
+    .blur {
+      background: linear-gradient(90deg,#fff0 50%,#c1c1c150 65% 65%,#fbfbfb 95%);
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 20%;
+    }
     @media screen and (max-width: 1200px) {
       display: none;
     }
@@ -151,7 +162,9 @@ $white-ish: #c4c4c4;
   .prj-right {
     margin: 0 auto;
     padding: 10px 35px;
+    position: relative;
     width: 65%;
+    .h3 { font-size: 1.8em; }
     @media screen and (max-width: 1200px) {
       min-width: 80%;
       padding: 0;
@@ -166,16 +179,18 @@ $white-ish: #c4c4c4;
       }
     }
     .prj-bttns { display: flex; }
-    & button {
+    & a {
       border: none;
       border-radius: 5px;
       box-shadow: 0.5px 1px 1.5px 0.5px $white-ish;
       display: inline-flex;
+      font-size: 0.8em;
       padding: 8px 10px;
       &:hover {
         box-shadow: 2px 2.5px 1.5px 0.5px $white-ish;
         transform: translateY(1px);
       }
+      span { align-self: center; }
     }
     .s-ico { width: 17px; }
     .bttn-l {
@@ -190,6 +205,15 @@ $white-ish: #c4c4c4;
       .s-ico { margin-right: 7px; }
     }
   }
+}
+
+.co-op {
+  bottom: 0;
+  color: #848484;
+  font-family: 'Parisienne', cursive !important;
+  font-size: 1.2em;
+  position: absolute;
+  right: 35px;
 }
 
 .ico {

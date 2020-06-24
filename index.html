@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./stylesheets/style.css">
-  <!-- Logo font -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
   <title>JACP's Portfolio</title>
 </head>
 <body class="body">
@@ -15,7 +16,7 @@
     </a>
     <ul class="nav-sec">
       <a href="#p-title" class="nav-link nlp"><li>Portfolio</li></a>
-      <a href="#portfolio" class="nav-link nlm"><li>Recent-work</li></a>
+      <a href="#prj2" class="nav-link nlm"><li>Recent-work</li></a>
       <a href="#about" class="nav-link nlm"><li>About</li></a>
       <a href="#contact" class="nav-link cntc-link"><li>Contact</li></a>
     </ul>
@@ -23,53 +24,123 @@
 
   <section class="block" id="intro">
     <h1 class="h1 title text">J. ALFREDO CARDENAS P.</h1>
-    <p class="p text">Web designer & full-stack developer with engineering background, passionate about creating great and meaningful user experiences with every line of code.</p>
+    <p class="p text">Web designer & full-stack developer with engineering background, passionate about life and creating fun and meaningful user experiences with every line of code.</p>
   </section>
 
   <section class="block" id="p-title">
     <h2 class="h2 title text">PORTFOLIO</h2>
-    <p class="p text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-      ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat</p>
+    <p class="p text">Take a look around and check my work in the following section where
+      you can see the projects I've worked on. Feel free view the live-demo of each and
+      the Github repos' for the source code.</p>
   </section>
 
   <section class="block"  id="portfolio">
-    <div class="project">
-      <div class="prj-left"></div>
+    <div class="project" id="prj1">
+      <div class="prj-left">
+        <img src="./images/NewsW-01.png" alt="">
+        <span class="blur"></span>
+      </div>
       <div class="prj-right">
-        <h3 class="h3 prj-title">Project 1</h3>
-        <p class="p prj-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat</p>
+        <h3 class="h3 prj-title">Newsweek clone</h3>
+        <p class="p prj-text">This project has the object of building a replica of the
+          news site www.newsweek.com using the Bootstrap framework and the
+          instructions in the Odin project site.</p>
         <div class="prj-codes">
           <div class="code"><p>HTML5</p></div>
-          <div class="code"><p>CSS3</p></div>
-          <div class="code"><p>Sass</p></div>
+          <div class="code"><p>CSS3</p></div> 
           <div class="code"><p>Bootstrap</p></div>
         </div>
         <div class="prj-bttns">
-          <button class="bttn-l"><span>Live Demo </span><img src="./images/up-arrow.svg" alt="" class="s-ico"></button>
-          <button class="bttn-s"><img src="./images/github.svg" alt="" class="s-ico"> View Source</button>
+          <a href="https://raw.githack.com/NewIncome/mv_bootstrap4newsweek/feature/index.html" class="bttn-l" target="_blank">
+            <span>Live Demo </span>
+            <img src="./images/up-arrow.svg" alt="" class="s-ico">
+          </a>
+          <a href="https://github.com/NewIncome/mv_bootstrap4newsweek" class="bttn-s" target="_blank"><img src="./images/github.svg" alt="" class="s-ico"> View Source</a>
         </div>
       </div>
     </div>
 
-    <div class="project">
-      <div class="prj-left"></div>
+    <div class="project" id="prj2">
+      <div class="prj-left">
+        <img src="./images/snapscan.jpg" alt="">
+        <span class="blur"></span>
+      </div>
       <div class="prj-right">
-        <h3 class="h3 prj-title">Project 1</h3>
-        <p class="p prj-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat</p>
+        <h3 class="h3 prj-title">Group Our Transactions</h3>
+        <p class="p prj-text">This is a capstone project for the Microverse Rails
+          module, it is based on an app for grouping transactions by goal with your
+          family/friends.</p>
         <div class="prj-codes">
           <div class="code"><p>HTML5</p></div>
           <div class="code"><p>CSS3</p></div>
           <div class="code"><p>Sass</p></div>
           <div class="code"><p>Bootstrap</p></div>
+          <div class="code"><p>Ruby</p></div>
+          <div class="code"><p>Rails</p></div>
+          <div class="code"><p>SQLite3</p></div>
         </div>
         <div class="prj-bttns">
-          <button class="bttn-l"><span>Live Demo </span><img src="./images/up-arrow.svg" alt="" class="s-ico"></button>
-          <button class="bttn-s"><img src="./images/github.svg" alt="" class="s-ico"> View Source</button>
+          <a href="https://group-trans.herokuapp.com" class="bttn-l" target="_blank">
+            <span>Live Demo </span>
+            <img src="./images/up-arrow.svg" alt="" class="s-ico">
+          </a>
+          <a href="https://github.com/NewIncome/MV_Group-Our-Transactions" class="bttn-s" target="_blank"><img src="./images/github.svg" alt="" class="s-ico"> View Source</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project" id="prj3">
+      <div class="prj-left">
+        <img src="./images/p-e_img.png" alt="">
+        <span class="blur"></span>
+      </div>
+      <div class="prj-right">
+        <h3 class="h3 prj-title">Private Events</h3>
+        <p class="p prj-text">On this project we made a site where you can create events,
+          invitations to said events, and see a full list of all the events past and
+          upcoming.</p>
+        <div class="prj-codes">
+          <div class="code"><p>HTML5</p></div>
+          <div class="code"><p>CSS3</p></div>
+          <div class="code"><p>Sass</p></div>
+          <div class="code"><p>Bootstrap</p></div>
+          <div class="code"><p>Ruby</p></div>
+          <div class="code"><p>Rails</p></div>
+          <div class="code"><p>SQLite3</p></div>
+        </div>
+        <div class="prj-bttns">
+          <a href="https://mv-private-events.herokuapp.com" class="bttn-l" target="_blank">
+            <span>Live Demo </span>
+            <img src="./images/up-arrow.svg" alt="" class="s-ico">
+          </a>
+          <a href="https://github.com/NewIncome/mv_private-events" class="bttn-s" target="_blank"><img src="./images/github.svg" alt="" class="s-ico"> View Source</a>
+        </div>
+        <div class="co-op">co-author Joseph F.</div>
+      </div>
+    </div>
+
+    <div class="project"  id="prj4">
+      <div class="prj-left">
+        <img src="./images/Fedora_framework-01.png" alt="">
+        <span class="blur"></span>
+      </div>
+      <div class="prj-right">
+        <h3 class="h3 prj-title">Sass Framework built site</h3>
+        <p class="p prj-text">This project is to take everything learned so far and use it
+          to build our own simple grid-based framework (the scss file). It also consists of
+          a second part which is building a website with the recently made framework; site
+          built: getfedora.</p>
+        <div class="prj-codes">
+          <div class="code"><p>HTML5</p></div>
+          <div class="code"><p>CSS3</p></div>
+          <div class="code"><p>Sass</p></div>
+        </div>
+        <div class="prj-bttns">
+          <a href="https://raw.githack.com/NewIncome/mv_framework/feature/index.html" class="bttn-l" target="_blank">
+            <span>Live Demo </span>
+            <img src="./images/up-arrow.svg" alt="" class="s-ico">
+          </a>
+          <a href="https://github.com/NewIncome/mv_framework" class="bttn-s" target="_blank"><img src="./images/github.svg" alt="" class="s-ico"> View Source</a>
         </div>
       </div>
     </div>
@@ -80,7 +151,9 @@
     <p class="p text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
       ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequat</p>
-    <a href="https://docs.google.com/document/d/1xr-DNWQVILCd5fmKi9e8Ee1bUcUPQ357fSb5R-TXrSA" class="ico"><img src="./images/contract.svg" alt=""></a>
+    <a href="https://docs.google.com/document/d/1xr-DNWQVILCd5fmKi9e8Ee1bUcUPQ357fSb5R-TXrSA" class="ico" target="_blank">
+      <img src="./images/contract.svg" alt="">
+    </a>
   </section>
 
   <section class="block" id="contact">
@@ -89,10 +162,10 @@
       ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequat</p>
     <ul class="cntc-links">
-      <a href="mailto: alfredo_cardenas@live.com" class="c-link"><li class=""><img src="./images/mail.svg" alt="" class="ico"></li></a>
-      <a href="https://twitter.com/J_A_fredo" class="c-link"><li class=""><img src="./images/twitter.svg" alt="" class="ico"></li></a>
-      <a href="https://www.linkedin.com/in/j-alfredo-c/" class="c-link"><li class=""><img src="./images/linkedin.svg" alt="" class="in ico"></li></a>
-      <a href="https://medium.com/@J_A_fredo" class="c-link"><li class=""><img src="./images/medium.svg" alt="" class="ico"></li></a>
+      <a href="mailto: alfredo_cardenas@live.com" class="c-link" target="_blank"><li class=""><img src="./images/mail.svg" alt="" class="ico"></li></a>
+      <a href="https://twitter.com/J_A_fredo" class="c-link" target="_blank"><li class=""><img src="./images/twitter.svg" alt="" class="ico"></li></a>
+      <a href="https://www.linkedin.com/in/j-alfredo-c/" class="c-link" target="_blank"><li class=""><img src="./images/linkedin.svg" alt="" class="in ico"></li></a>
+      <a href="https://medium.com/@J_A_fredo" class="c-link" target="_blank"><li class=""><img src="./images/medium.svg" alt="" class="ico"></li></a>
     </ul>
   </section>
 
