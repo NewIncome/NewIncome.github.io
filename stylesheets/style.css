@@ -55,7 +55,7 @@
   padding: 0 30px;
   position: fixed;
   width: 100%;
-  z-index: 1; }
+  z-index: 3; }
 
 .logo {
   color: #127ce8;
@@ -196,7 +196,11 @@
   height: 100%;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
+
+#prj2 .blur {
+  background: linear-gradient(-90deg, #fff0 50%, #eeeeee50 65% 65%, #fbfbfb 95%); }
 
 .i {
   margin-top: 0 !important; }
