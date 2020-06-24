@@ -35,6 +35,9 @@
 .text {
   text-align: center; }
 
+.p {
+  margin: 30px 0; }
+
 .block {
   background-color: #e4e4e4;
   margin: 0 auto;
@@ -103,6 +106,10 @@
 
 #p-title {
   background: linear-gradient(#006c93, #00a4df); }
+
+.ico {
+  align-self: center;
+  width: 37px; }
 
 #about {
   background: #e8eff2;
@@ -220,10 +227,6 @@
 #prj2 .h3 {
   margin-bottom: 5px !important; }
 
-.ico {
-  align-self: center;
-  width: 37px; }
-
 .in {
   width: 33px; }
 
@@ -233,13 +236,12 @@
 @keyframes eIcon {
   50% {
     transform: scale(1.3); } }
-.p {
-  margin: 30px 0; }
+.li {
+  list-style: none; }
 
 .cntc-links {
   display: flex;
-  justify-content: center;
-  list-style: none; }
+  justify-content: center; }
   .cntc-links .c-link {
     margin: 20px 20px; }
 
