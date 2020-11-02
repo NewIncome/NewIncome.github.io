@@ -104,6 +104,10 @@
   min-height: 70vh;
   padding-top: 115px;
   text-shadow: 1px 1px 1px #757575; }
+  #intro .links-block-1 {
+    filter: invert(82%); }
+    #intro .links-block-1 .li {
+      margin: 0 10%; }
 
 #p-title {
   background: linear-gradient(#006c93, #00a4df); }
@@ -149,9 +153,6 @@
       right: 0;
       top: 0;
       width: 20%; }
-    @media screen and (max-width: 1200px) {
-      .project .prj-left {
-        display: none; } }
   .project .prj-right {
     margin: 0 auto;
     padding: 10px 35px;

@@ -131,6 +131,12 @@ $logo-blue: #127ce8;
   min-height: 70vh;
   padding-top: 115px;
   text-shadow: 1px 1px 1px #757575;
+
+  .links-block-1 {
+    filter: invert(82%);
+
+    .li { margin: 0 10%; }
+  }
 }
 
 #p-title,
@@ -190,7 +196,7 @@ $logo-blue: #127ce8;
     }
 
     @media screen and (max-width: 1200px) {
-      display: none;
+      // display: none;
     }
   }
 
