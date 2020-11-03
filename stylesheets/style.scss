@@ -1,0 +1,361 @@
+// to add other files
+// @use 'base'
+
+// Variables
+$white-ish: #c4c4c4;
+$logo-blue: #127ce8;
+
+%info-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  & > * {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
+%flx-btwn {
+  display: flex;
+  justify-content: space-between;
+}
+
+%bttn {
+  border: 2px solid #95dab4;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.body { color: #262626; }
+
+.text { text-align: center; }
+
+.p {
+  margin: 30px 0;
+  // text-align: justify; NOT SURE YET
+}
+
+.block {
+  background-color: #e4e4e4;
+  margin: 0 auto;
+  min-height: 30vh;
+  padding: 30px 10% 40px;
+  width: 100%;
+  .h1 { font-size: 3em; }
+  .h2 { font-size: 2.5em; }
+  .p { font-size: 1.5rem; }
+}
+
+.nav {
+  align-items: center;
+  background: linear-gradient(#35604291, #fff0);
+  height: 100px;
+  padding: 0 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.logo {
+  color: $logo-blue;
+  text-shadow: 1px 1px 1px #fff;
+  font-size: 2em;
+  .nav-logo { font-family: 'Black Ops One', cursive !important; }
+}
+
+.nav,
+.nav-sec {
+  @extend %flx-btwn;
+}
+
+.nav-sec {
+  font-size: 1.05em;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+
+  .nav-link {
+    color: #262626;
+    font-weight: bold;
+    list-style: none;
+    margin-left: 50px;
+    padding: 6px 10px;
+  }
+
+  .nlp {
+    color: #008bff;
+    text-shadow: 1px 1px 2px #000;
+
+    &:hover {
+      text-shadow: 1px 1px 10px #000;
+      transform: scale(1.15);
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+
+  .nlm {
+    text-shadow: 1px 1px 2px #acacac;
+
+    &:hover {
+      color: #92d9b2;
+      text-shadow: 1px 1px 10px #000;
+      transform: scale(1.05);
+    }
+  }
+
+  .cntc-link {
+    @extend %bttn;
+
+    background-color: #95dab4;
+
+    &:hover { box-shadow: 1px 2px 1px 2px #0000005c; }
+  }
+  .li-bt:hover { transform: scale(1.05, 1.05); }
+}
+
+.li {
+  list-style: none;
+}
+
+#intro {
+  @extend %info-block;
+
+  background: linear-gradient(#47d04de3, #0c3c0047), no-repeat top/cover url("../images/489112.jpg") fixed;
+  color: #f5f1ff;
+  min-height: 70vh;
+  padding-top: 115px;
+  text-shadow: 1px 1px 1px #757575;
+
+  .links-block-1 {
+    filter: invert(82%);
+
+    .li { margin: 0 10%; }
+  }
+}
+
+#p-title,
+#portfolio,
+#about,
+#contact { @extend %info-block; }
+
+#p-title { background: linear-gradient(#006c93, #00a4df); }
+
+.ico {
+  align-self: center;
+  width: 37px;
+}
+
+#about {
+  background: #e8eff2;
+  color: #313131;
+
+  .ico:hover { animation: eIcon 2s ease-in-out; }
+}
+
+#portfolio { background: linear-gradient(#ffffff7d, #ffffff7d), no-repeat center/cover url("../images/0NUOGy.jpg") fixed; }
+
+.project {
+  background-color: #fbfbfb;
+  border: 1px solid #000;
+  box-shadow: 2px 2.5px 7px 3px $white-ish;
+  display: flex;
+  margin: 40px auto;
+  position: relative;
+
+  @media screen and (min-width: 425px) {
+    max-width: 90%;
+  }
+
+  .prj-left {
+    background-color: #2d2a2a;
+    height: 100%;
+    min-height: 350px;
+    overflow: hidden;
+    position: relative;
+    width: 35%;
+
+    img {
+      left: -125px;
+      max-width: 786px;
+      position: relative;
+
+      @media screen and (max-width: 1200px) {
+        left: 0 !important;
+        width: 100%;
+      }
+    }
+
+    .blur {
+      background: linear-gradient(90deg, #fff0 50%, #c1c1c150 65% 65%, #fbfbfb 95%);
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 20%;
+
+      @media screen and (max-width: 1200px) {
+        background: linear-gradient(0deg, #fff0 50%, #c1c1c150 65% 65%, #fbfbfb 95%);
+        height: 20%;
+        width: 100%;
+        z-index: 1;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      background-color: #fff;
+      margin: 10px auto;
+      width: 95%;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column-reverse;
+  }
+
+  .prj-right {
+    margin: 0 auto;
+    padding: 10px 35px;
+    position: relative;
+    width: 65%;
+
+    .h3 { font-size: 1.8em; }
+
+    .p { margin-bottom: 5px !important; }
+
+    @media screen and (max-width: 1200px) {
+      min-width: 80%;
+      padding: 0;
+
+      .p { font-size: 1em; }
+    }
+
+    & > * { margin: 28px 0; }
+
+    .prj-codes {
+      .code {
+        @extend %bttn;
+
+        display: inline-block;
+        margin-top: 5px;
+      }
+    }
+
+    .prj-bttns { display: flex; }
+
+    & a {
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0.5px 1px 1.5px 0.5px $white-ish;
+      display: inline-flex;
+      font-size: 0.8em;
+      padding: 8px 10px;
+
+      &:hover {
+        box-shadow: 2px 2.5px 1.5px 0.5px $white-ish;
+        transform: translateY(1px);
+      }
+
+      span { align-self: center; }
+    }
+
+    .s-ico { width: 17px; }
+
+    .bttn-l {
+      background-color: #02a0d9;
+      color: #fff;
+
+      .s-ico { margin-left: 7px; }
+    }
+
+    .bttn-s {
+      background-color: #fbfbfb;
+      color: #02a0d9;
+      margin-left: 10px;
+
+      .s-ico { margin-right: 7px; }
+    }
+  }
+}
+
+#prj2,
+#prj4,
+#prj6 {
+  .blur {
+    @media screen and (min-width: 1200px) {
+      background: linear-gradient(-90deg, #fff0 50%, #c1c1c150 65% 65%, #fbfbfb 95%);
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.i { margin-top: 0 !important; }
+
+.co-op {
+  bottom: 0;
+  color: #848484;
+  font-family: 'Parisienne', cursive !important;
+  font-size: 1.2em;
+  position: absolute;
+  right: 35px;
+
+  @media screen and (max-width: 846px) {
+    bottom: -28px;
+    font-size: 1em;
+    right: -10%;
+  }
+}
+
+#prj2 .h3 {
+  margin-bottom: 5px !important;
+}
+
+#prj3 img {
+  @media screen and (min-width: 1200px) {
+    left: -166px;
+  }
+}
+
+.in { width: 33px; }
+
+#contact { background: #55ce7d; }
+
+@keyframes eIcon {
+  50% { transform: scale(1.3); }
+}
+
+.cntc-links {
+  display: flex;
+  justify-content: center;
+
+  .c-link {
+    margin: 20px 20px;
+  }
+}
+
+.footer {
+  background-color: #2d2a2a;
+  color: #8e8e8e;
+  padding: 40px 0 50px;
+
+  .a {
+    color: $logo-blue;
+  }
+}

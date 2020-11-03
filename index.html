@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
+  <title>JACP's Portfolio</title>
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body class="body">
+  <nav class="nav">
+    <a href="#intro" class="logo">
+      <div class="nav-logo">JACP</div>
+    </a>
+    <ul class="nav-sec">
+      <li class="li"><a href="#p-title" class="nav-link nlp">Portfolio</a></li>
+      <li class="li"><a href="#prj3" class="nav-link nlm">Recent-work</a></li>
+      <li class="li"><a href="#about" class="nav-link nlm">About</a></li>
+      <li class="li li-bt"><a href="#contact" class="nav-link cntc-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="block" id="intro">
+    <h1 class="h1 title text">J. ALFREDO CARDENAS P.</h1>
+    <p class="p text">Web designer & full-stack developer with engineering background, passionate about life and creating fun and meaningful user experiences with every line of code.</p>
+    <ul class="cntc-links links-block-1">
+      <li class="li"><a href="mailto:alfredo_cardenas@live.com" class="c-link" target="_blank" rel="noreferrer noopener"><img src="./images/mail.svg" alt="" class="ico"></a></li>
+      <li class="li"><a href="https://twitter.com/J_A_fredo" class="c-link" target="_blank" rel="noreferrer noopener"><img src="./images/twitter.svg" alt="" class="ico"></a></li>
+      <li class="li"><a href="https://www.linkedin.com/in/j-alfredo-c/" class="c-link" target="_blank" rel="noreferrer noopener"><img src="./images/linkedin.svg" alt="" class="in ico"></a></li>
+      <li class="li"><a href="https://j-a-fredo.medium.com/" class="c-link" target="_blank" rel="noreferrer noopener"><img src="./images/medium.svg" alt="" class="ico"></a></li>
+    </ul>
+  </section>
+
+  <section class="block" id="p-title">
+    <h2 class="h2 title text">PORTFOLIO</h2>
+    <p class="p text">Take a look around and check my work in the following section where
+      you can see the projects I've worked on. Feel free view the live-demo of each and
+      the Github repos' for the source code.</p>
+  </section>
+
+  <section class="block"  id="portfolio">
+    <div class="project" id="prj1">
+      <div class="prj-left">
+        <img src="./images/NewsW-01.png" alt="">
+        <span class="blur"></span>
+      </div>
+      <div class="prj-right">
+        <h3 class="h3 prj-title">Newsweek clone</h3>
+        <p class="p prj-text">This project has the object of building a replica of the
+          news site www.newsweek.com using the Bootstrap framework and the
+          instructions in the Odin project site.</p>
+        <div class="prj-codes">
+          <div class="code"><p>HTML5</p></div>
+          <div class="code"><p>CSS3</p></div> 
+          <div class="code"><p>Bootstrap</p></div>
+        </div>
+        <div class="prj-bttns">
+          <a href="https://raw.githack.com/NewIncome/mv_bootstrap4newsweek/feature/index.html" class="bttn-l" target="_blank" rel="noreferrer noopener">
+            <span>Live Demo </span>
+            <img src="./images/up-arrow.svg" alt="" class="s-ico">
+          </a>
+          <a href="https://github.com/NewIncome/mv_bootstrap4newsweek" class="bttn-s" target="_blank" rel="noreferrer noopener"><img src="./images/github.svg" alt="" class="s-ico"> View Source</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="project"  id="prj2">
+      <div class="prj-right">
+        <h3 class="h3 prj-title">Sass Framework</h3><i>to build Fedora site clone</i>
+        <p class="p prj-text">This project is to take everything learned so far and use it
+          to build our own simple grid-based framework (the scss file). It also consists of
+          a second part which is building a website with the recently made framework; site
+          built: getfedora.</p>
+        <div class="prj-codes">
+          <div class="code"><p>HTML5</p></div>
+          <div class="code"><p>CSS3</p></div>
+          <div class="code"><p>SASS</p></div>
+        </div>
+        <div class="prj-bttns">
+          <a href="https://raw.githack.com/NewIncome/mv_framework/feature/index.html" class="bttn-l" target="_blank" rel="noreferrer noopener">
+            <span>Live Demo </span>
+            <img src="./images/up-arrow.svg" alt="" class="s-ico">
+          </a>
+          <a href="https://github.com/NewIncome/mv_framework" class="bttn-s" target="_blank" rel="noreferrer noopener"><img src="./images/github.svg" alt="" class="s-ico"> View Source</a>
+        </div>
+        <div class="co-op">co-author Alisson P.</div>
+      </div>
+      <div class="prj-left">
+        <span class="blur"></span>
+        <img src="./images/Fedora_framework-01.png" alt="">
+      </div>
+    </div>
+
+    <div class="project" id="prj3">
+      <div class="prj-left">
+        <img src="./images/WeatherApp.png" alt="">
+        <span class="blur"></span>
+      </div>
+      <div class="prj-right">
+        <h3 class="h3 prj-title">Weather App</h3>
+        <p class="p prj-text">Web app project that allows users to view weather information by
+          city name. The use of two APIs gives the weather info(openweathermap.org) and the city
+          background image(pixabay.com).</p>
+        <div class="prj-codes">
+          <div class="code"><p>HTML5</p></div>
+          <div class="code"><p>CSS3</p></div>
+          <div class="code"><p>SCSS</p></div>
+          <div class="code"><p>Javascript</p></div>
+          <div class="code"><p>ES6</p></div>
+          <div class="code"><p>NPM</p></div>
+        </div>
+        <div class="prj-bttns">
+          <a href="https://newincome.github.io/WeatherApp/" class="bttn-l" target="_blank" rel="noreferrer noopener">
+            <span>Live Demo </span>
+            <img src="./images/up-arrow.svg" alt="" class="s-ico">
+          </a>
+          <a href="https://github.com/NewIncome/WeatherApp" class="bttn-s" target="_blank" rel="noreferrer noopener"><img src="./images/github.svg" alt="" class="s-ico"> View Source</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project"  id="prj4">
+      <div class="prj-right">
+        <h3 class="h3 prj-title">Rabbit vs The Aliens</h3>
+        <p class="p prj-text">Rabbit-Action is a browser game project implementing a
+          recently learned JS framework. The main purpose of the game is to kill all
+          the enemies in the least amount of time. As an extra feature, the game saves
+          and retrieves the time scores with requests to a Microverse API.</p>
+        <div class="prj-codes">
+          <div class="code"><p>HTML5</p></div>
+          <div class="code"><p>CSS3</p></div>
+          <div class="code"><p>Javascript</p></div>
+          <div class="code"><p>ES6</p></div>
+          <div class="code"><p>NPM</p></div>
+          <div class="code"><p>Phaser3</p></div>
+        </div>
+        <div class="prj-bttns">
+          <a href="https://rabbit-action-game.netlify.app/" class="bttn-l" target="_blank" rel="noreferrer noopener">
+            <span>Live Demo </span>
+            <img src="./images/up-arrow.svg" alt="" class="s-ico">
+          </a>
+          <a href="https://github.com/NewIncome/Rabbit-Action_Game" class="bttn-s" target="_blank" rel="noreferrer noopener"><img src="./images/github.svg" alt="" class="s-ico"> View Source</a>
+        </div>
+      </div>
+      <div class="prj-left">
+        <span class="blur"></span>
+        <img src="./images/rabbitGame.png" alt="">
+      </div>
+    </div>
+
+    <div class="project" id="prj5">
+      <div class="prj-left">
+        <img src="./images/snapscan.jpg" alt="">
+        <span class="blur"></span>
+      </div>
+      <div class="prj-right">
+        <h3 class="h3 prj-title">Group Our Transactions</h3>
+        <p class="p prj-text">This is a capstone project for the Microverse Rails
+          module, it is based on an app for grouping transactions by goal with your
+          family/friends.</p><i>login: Alfred</i>
+        <div class="prj-codes">
+          <div class="code"><p>HTML5</p></div>
+          <div class="code"><p>CSS3</p></div>
+          <div class="code"><p>SASS</p></div>
+          <div class="code"><p>Bootstrap</p></div>
+          <div class="code"><p>RUBY</p></div>
+          <div class="code"><p>RAILS</p></div>
+          <div class="code"><p>SQLite3</p></div>
+        </div>
+        <div class="prj-bttns">
+          <a href="https://group-trans.herokuapp.com" class="bttn-l" target="_blank" rel="noreferrer noopener">
+            <span>Live Demo </span>
+            <img src="./images/up-arrow.svg" alt="" class="s-ico">
+          </a>
+          <a href="https://github.com/NewIncome/MV_Group-Our-Transactions" class="bttn-s" target="_blank" rel="noreferrer noopener"><img src="./images/github.svg" alt="" class="s-ico"> View Source</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="project" id="prj6">
+      <div class="prj-right">
+        <h3 class="h3 prj-title">Private Events</h3>
+        <p class="p prj-text">On this project we made a site where you can create events,
+          invitations to said events, and see a full list of all the events past and
+          upcoming.</p><i>login: user-1@gmail.com</i>
+        <div class="prj-codes">
+          <div class="code"><p>HTML5</p></div>
+          <div class="code"><p>CSS3</p></div>
+          <div class="code"><p>SASS</p></div>
+          <div class="code"><p>Bootstrap</p></div>
+          <div class="code"><p>RUBY</p></div>
+          <div class="code"><p>RAILS</p></div>
+          <div class="code"><p>SQLite3</p></div>
+        </div>
+        <div class="prj-bttns">
+          <a href="https://mv-private-events.herokuapp.com" class="bttn-l" target="_blank" rel="noreferrer noopener">
+            <span>Live Demo </span>
+            <img src="./images/up-arrow.svg" alt="" class="s-ico">
+          </a>
+          <a href="https://github.com/NewIncome/mv_private-events" class="bttn-s" target="_blank" rel="noreferrer noopener"><img src="./images/github.svg" alt="" class="s-ico"> View Source</a>
+        </div>
+        <div class="co-op">co-author Joseph F.</div>
+      </div>
+      <div class="prj-left">
+        <span class="blur"></span>
+        <img src="./images/p-e_img.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <h2 class="h2 title text">ABOUT</h2>
+    <p class="p text">I am a self-taught Web Developer with a large preference for
+      full-stack developing. Former experiences as a Mechatronics Engineer, creative
+      with good communication and organization skills. I love outdoor activities, and
+      hobbies like playing the violin and building model figures.</p>
+    <p class="p text">Feel free to checkout my resume:</p>
+    <a href="https://docs.google.com/document/d/1xr-DNWQVILCd5fmKi9e8Ee1bUcUPQ357fSb5R-TXrSA" class="ico" target="_blank" rel="noreferrer noopener">
+      <img src="./images/contract.svg" alt="">
+    </a>
+  </section>
+
+  <section class="block" id="contact">
+    <h2 class="h2 title text">GET IN TOUCH</h2>
+    <p class="p text">If you want to know more about me, my work or are interested in
+      hiring a professional, bi-lingual and dedicated full-stack developer don't hesitate
+      to contact me through any of the following options</p>
+    <ul class="cntc-links">
+      <li class="li"><a href="mailto:alfredo_cardenas@live.com" class="c-link" target="_blank" rel="noreferrer noopener"><img src="./images/mail.svg" alt="" class="ico"></a></li>
+      <li class="li"><a href="https://twitter.com/J_A_fredo" class="c-link" target="_blank" rel="noreferrer noopener"><img src="./images/twitter.svg" alt="" class="ico"></a></li>
+      <li class="li"><a href="https://www.linkedin.com/in/j-alfredo-c/" class="c-link" target="_blank" rel="noreferrer noopener"><img src="./images/linkedin.svg" alt="" class="in ico"></a></li>
+      <li class="li"><a href="https://j-a-fredo.medium.com/" class="c-link" target="_blank" rel="noreferrer noopener"><img src="./images/medium.svg" alt="" class="ico"></a></li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p class="text">Crafted using HTML, CSS, Sass, and Visual Studio Code.</p>
+    <p class="text">Special thanks to <a href="https://www.flaticon.com/authors/pixel-perfect" class="a" target="_blank" rel="noreferrer noopener">
+      Pixel Perfect (by Flaticons.com)</a> for the icons,
+      <a href="http://www.pavelhuza.com" class="a" target="_blank" rel="noreferrer noopener"> Pavel Huza</a>
+      and <a href="https://www.justinchi.me" class="a" target="_blank" rel="noreferrer noopener">Justin Chi</a>
+      for layout inspiration.</p>
+    <p class="text">J. Alfredo Cardenas P. © 2020</p>
+    <!-- Correct flaticon Acknowledgment: "Icon made by Pixel perfect from www.flaticon.com" -->
+  </footer>
+
+</body>
+</html>
