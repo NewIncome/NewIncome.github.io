@@ -166,6 +166,7 @@ $logo-blue: #127ce8;
   box-shadow: 2px 2.5px 7px 3px $white-ish;
   display: flex;
   margin: 40px auto;
+  position: relative;
 
   @media screen and (min-width: 425px) {
     max-width: 90%;
@@ -184,6 +185,11 @@ $logo-blue: #127ce8;
       left: -125px;
       max-width: 730px;
       position: relative;
+
+      @media screen and (max-width: 1200px) {
+        left: 5%;
+        width: 90%;
+      }
     }
 
     .blur {
@@ -193,11 +199,25 @@ $logo-blue: #127ce8;
       right: 0;
       top: 0;
       width: 20%;
+
+      @media screen and (max-width: 1200px) {
+        background: linear-gradient(0deg, #fff0 50%, #c1c1c150 65% 65%, #fbfbfb 95%);
+        height: 20%;
+        right: 5%;
+        width: 90%;
+        z-index: 1;
+      }
     }
 
     @media screen and (max-width: 1200px) {
-      // display: none;
+      background-color: #fff;
+      margin-bottom: 20px;
+      width: 100%;
     }
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column-reverse;
   }
 
   .prj-right {
@@ -268,12 +288,18 @@ $logo-blue: #127ce8;
 #prj2,
 #prj4 {
   .blur {
-    background: linear-gradient(-90deg, #fff0 50%, #c1c1c150 65% 65%, #fbfbfb 95%);
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
+    @media screen and (min-width: 1200px) {
+      background: linear-gradient(-90deg, #fff0 50%, #c1c1c150 65% 65%, #fbfbfb 95%);
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
   }
 }
 
