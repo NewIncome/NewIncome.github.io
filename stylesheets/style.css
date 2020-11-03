@@ -143,14 +143,13 @@
     position: relative;
     width: 35%; }
     .project .prj-left img {
-      height: 100%;
       left: -125px;
-      max-width: 730px;
+      max-width: 786px;
       position: relative; }
       @media screen and (max-width: 1200px) {
         .project .prj-left img {
-          left: 5%;
-          width: 90%; } }
+          left: 0 !important;
+          width: 100%; } }
     .project .prj-left .blur {
       background: linear-gradient(90deg, #fff0 50%, #c1c1c150 65% 65%, #fbfbfb 95%);
       height: 100%;
@@ -162,14 +161,13 @@
         .project .prj-left .blur {
           background: linear-gradient(0deg, #fff0 50%, #c1c1c150 65% 65%, #fbfbfb 95%);
           height: 20%;
-          right: 5%;
-          width: 90%;
+          width: 100%;
           z-index: 1; } }
     @media screen and (max-width: 1200px) {
       .project .prj-left {
         background-color: #fff;
-        margin-bottom: 20px;
-        width: 100%; } }
+        margin: 10px auto;
+        width: 95%; } }
   @media screen and (max-width: 1200px) {
     .project {
       flex-direction: column-reverse; } }
@@ -223,7 +221,8 @@
 
 @media screen and (min-width: 1200px) {
   #prj2 .blur,
-  #prj4 .blur {
+  #prj4 .blur,
+  #prj6 .blur {
     background: linear-gradient(-90deg, #fff0 50%, #c1c1c150 65% 65%, #fbfbfb 95%);
     height: 100%;
     position: absolute;
@@ -232,7 +231,8 @@
     z-index: 1; } }
 @media screen and (max-width: 1200px) {
   #prj2,
-  #prj4 {
+  #prj4,
+  #prj6 {
     flex-direction: column; } }
 
 .i {
@@ -253,6 +253,10 @@
 
 #prj2 .h3 {
   margin-bottom: 5px !important; }
+
+@media screen and (min-width: 1200px) {
+  #prj3 img {
+    left: -166px; } }
 
 .in {
   width: 33px; }
