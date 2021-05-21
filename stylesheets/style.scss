@@ -289,7 +289,8 @@ $logo-blue: #127ce8;
 
 #prj2,
 #prj4,
-#prj6 {
+#prj6,
+#prj8 {
   .blur {
     @media screen and (min-width: 1200px) {
       background: linear-gradient(-90deg, #fff0 50%, #c1c1c150 65% 65%, #fbfbfb 95%);
@@ -298,8 +299,7 @@ $logo-blue: #127ce8;
       left: 0;
       top: 0;
       z-index: 1;
-    }
-  }
+    } }
 
   @media screen and (max-width: 1200px) {
     flex-direction: column;

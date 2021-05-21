@@ -222,7 +222,8 @@
 @media screen and (min-width: 1200px) {
   #prj2 .blur,
   #prj4 .blur,
-  #prj6 .blur {
+  #prj6 .blur,
+  #prj8 .blur {
     background: linear-gradient(-90deg, #fff0 50%, #c1c1c150 65% 65%, #fbfbfb 95%);
     height: 100%;
     position: absolute;
@@ -232,7 +233,8 @@
 @media screen and (max-width: 1200px) {
   #prj2,
   #prj4,
-  #prj6 {
+  #prj6,
+  #prj8 {
     flex-direction: column; } }
 
 .i {
