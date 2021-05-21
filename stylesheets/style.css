@@ -220,6 +220,9 @@
         margin-right: 7px; }
 
 @media screen and (min-width: 1200px) {
+  .project .prj-right {
+    display: flex;
+    flex-direction: column; }
   #prj2 .blur,
   #prj4 .blur,
   #prj6 .blur,

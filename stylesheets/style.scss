@@ -301,7 +301,14 @@ $logo-blue: #127ce8;
       z-index: 1;
     } }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.project .prj-right {
+  @media screen and (min-width: 1200px) {
+    display: flex;
     flex-direction: column;
   }
 }
