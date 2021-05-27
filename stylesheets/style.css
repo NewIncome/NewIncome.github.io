@@ -278,8 +278,6 @@
 .cntc-links {
   display: flex;
   justify-content: center; }
-  .cntc-links .c-link {
-    margin: 20px 20px; }
 
 .footer {
   background-color: #2d2a2a;
