@@ -277,7 +277,7 @@
 
 .cntc-links {
   display: flex;
-  justify-content: center; }
+  justify-content: space-evenly; }
 
 .footer {
   background-color: #2d2a2a;
