@@ -1,6 +1,6 @@
 # Portfolio Readme
 
-This is the my personal Portfolio site. Made for showcasing all the work and projects during my Full-stack developer study trayectory.
+This is the my personal Portfolio site. Made for showcasing all the work and projects during my Full-stack developer study trajectory.
 
 ## Portfolio
 ![image01](./images/Portfolio-01.png)
