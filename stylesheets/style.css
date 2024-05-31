@@ -138,10 +138,14 @@
   .project .prj-left {
     background-color: #2d2a2a;
     height: 100%;
-    min-height: 350px;
     overflow: hidden;
     position: relative;
     width: 35%; }
+    @media screen and (min-width: 1200px) {
+      .project .prj-left {
+          min-height: 350px;
+        }
+      }
     .project .prj-left img {
       left: -125px;
       max-width: 786px;
