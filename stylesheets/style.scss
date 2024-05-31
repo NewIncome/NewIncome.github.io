@@ -179,10 +179,13 @@ $logo-blue: #127ce8;
   .prj-left {
     background-color: #2d2a2a;
     height: 100%;
-    min-height: 350px;
     overflow: hidden;
     position: relative;
     width: 35%;
+
+    @media screen and (min-width: 1200px) {
+      min-height: 350px;
+    }
 
     img {
       left: -125px;
