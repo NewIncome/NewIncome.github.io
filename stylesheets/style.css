@@ -11,7 +11,9 @@
   #contact > * {
     margin-bottom: 20px;
     margin-top: 20px; }
-
+.h-510 { max-height: 510px; }
+.h-440 { max-height: 510px; }
+.left-sm { left: -80px !important; }
 .nav,
 .nav-sec {
   display: flex;
